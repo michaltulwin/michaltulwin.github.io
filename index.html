@@ -1,0 +1,105 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Michał Tulwin — Personal Website</title><meta name="description" content="Michał Tulwin — Economics research, AI, information economics and political economy"><style>
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:30px}body{margin:0;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none;text-underline-offset:3px}a:hover{text-decoration:underline}a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.portrait{display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}.portrait:after{content:'PLACEHOLDER PHOTO';position:absolute;bottom:12px;left:0;right:0;text-align:center;font:10px Arial,sans-serif;letter-spacing:1.4px;color:#8b7969}
+.muted{color:var(--muted)}.note{font-size:13px;color:var(--muted)}.note a{font-weight:600}
+@media(max-width:800px){
+ .container{padding-left:25px;padding-right:25px}
+ .hero{gap:28px;padding-top:46px;padding-bottom:46px}
+ .nav{gap:15px;font-size:11px}
+ .portrait{width:100%;height:auto;aspect-ratio:4/5}
+ .hero{grid-template-columns:165px minmax(0,1fr)}
+ .hero-photo{grid-column:1;grid-row:1}.hero-copy{grid-column:2;grid-row:1}
+ h1{font-size:42px;letter-spacing:-1px}
+ .role{font-size:13px}.lead{font-size:16px}
+ #research{margin:0;padding-left:0;padding-right:0}
+ .section-heading{font-size:29px}
+}
+@media(max-width:560px){
+ .container{padding-left:20px;padding-right:20px}
+ .header-inner{min-height:0;flex-direction:column;align-items:flex-start;gap:8px;padding-top:15px;padding-bottom:14px}
+ .nav{gap:13px;flex-wrap:wrap}
+ .hero{grid-template-columns:105px 1fr;gap:18px;align-items:start;padding:34px 0 41px;min-height:0}
+ .portrait{width:105px;height:134px;aspect-ratio:auto}.portrait:after{font-size:7px;letter-spacing:.5px}
+ .portrait .initials{font-size:40px}
+ .hero-photo{grid-column:1;grid-row:1}.hero-copy{grid-column:1/-1;grid-row:2}
+ h1{font-size:40px;letter-spacing:-1.4px;margin:0 0 8px}
+ .eyebrow{font-size:10px}.role{margin-bottom:18px}.lead{font-size:17px;line-height:1.5}
+ .photo-note{font-size:9px}
+ .content-section{padding:42px 0 38px}.section-heading{font-size:29px}
+ .paper h3{font-size:20px}.small-row{flex-direction:column;gap:4px}.policy-row{grid-template-columns:44px 1fr}
+ .linkbar{margin-top:18px;gap:10px}
+}
+
+
+:root{--ink:#332d28;--body:#5b5048;--muted:#81776d;--line:#e7ded3;--paper:#fff;--warm:#eee3d3;--accent:#846148;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;color:var(--body);background:var(--paper);line-height:1.65;font-size:15px}
+.container{max-width:1030px;margin:auto;padding:0 44px}
+.top-area{background:var(--warm)}.site-header{background:var(--warm)}
+.header-inner{min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.logo{font-weight:750;letter-spacing:-.7px;font-size:17px;color:var(--ink)}.logo span{color:var(--accent)}
+.nav{display:flex;gap:27px;font-size:13px;align-items:center}.nav a{color:#4d443d}.nav a:last-child{border:1px solid #a9947f;border-radius:40px;padding:8px 16px}
+.hero{display:grid;grid-template-columns:230px minmax(0,1fr);gap:65px;align-items:center;min-height:400px;padding:42px 0 77px}
+.portrait{width:230px;height:293px;background:linear-gradient(135deg,#c5a68a,#ede2d3);border-radius:8px;box-shadow:0 17px 42px #8b735b19}
+.portrait .initials{font:bold 67px 'Segoe UI',sans-serif;color:#a88b71;letter-spacing:-6px}
+.photo-note{display:none}
+h1{font-size:clamp(48px,5.2vw,65px);line-height:1.03;letter-spacing:-2.5px;margin:9px 0 14px;color:var(--ink);font-weight:750}
+h2,h3{color:var(--ink)}.eyebrow{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#8a6a50;font-weight:750}
+.role{font-size:14px;color:#735f51;margin:0 0 26px}.lead{font-size:19px;line-height:1.6;color:var(--ink);font-weight:430;margin:0 0 17px;max-width:600px}
+.secondary{font-size:14px;line-height:1.7;max-width:625px;margin:0 0 16px}
+.linkbar{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:25px;font-size:13px;font-weight:650}
+.linkbar a{border:1px solid #ab987f;color:#594637;border-radius:30px;padding:7px 17px}.linkbar a:first-child{border:0;padding-left:0}
+.content-section{padding:66px 0 62px;border-bottom:1px solid var(--line)}
+.section-heading{font-size:32px;letter-spacing:-1px;margin:0 0 20px;font-weight:700}
+.paper{display:grid;grid-template-columns:1fr;gap:0;padding:23px 0 26px;border-top:1px solid var(--line)}
+.paper h3{font-size:21px;letter-spacing:-.4px;font-weight:650;margin:0 0 5px;line-height:1.4}
+.byline{font-size:13px;color:var(--muted);margin:0 0 12px}.summary{font-size:14px;max-width:820px;line-height:1.75;margin:0 0 12px}
+.paper-links{font-size:13px;font-weight:700}.pill{font-size:11px;padding:3px 10px;border-radius:20px;background:#f4ece2;color:#8f6748;display:inline-block;margin:2px 0 8px}
+.small-row{border-top:1px solid var(--line);padding:20px 0;display:flex;justify-content:space-between;gap:12px}.small-row strong{color:var(--ink)}.small-row .muted{font-size:13px}
+.policy-row{display:grid;grid-template-columns:55px 1fr;gap:12px;padding:14px 0;border-top:1px solid var(--line);font-size:14px}.year{font-size:12px;color:var(--muted)}
+footer{font-size:12px;padding:28px 0 35px;color:var(--muted)}
+
+/* Layout B + type from A. Warm color palettes, editable here. */
+:root{--ink:#302C28;--body:#554F49;--muted:#777168;--line:#E9E0D5;--paper:#FFFDF9;--warm:#F0E7DB;--accent:#80614D;}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--paper);font-size:15px;line-height:1.68;}
+h1,h2,h3{font-family:Georgia,'Times New Roman',serif;font-weight:400;color:var(--ink)}
+.logo{font:500 22px Georgia,'Times New Roman',serif;letter-spacing:-.4px;color:var(--ink)}
+.site-header{border-bottom:1px solid rgba(112,92,74,.13)}
+.header-inner{min-height:80px}
+.nav{gap:26px;font-size:13px}
+.nav a{color:var(--body)}
+.nav a:last-child{border-radius:3px;border-color:#C9B9A7;padding:6px 13px}
+.hero{gap:58px;min-height:390px;padding:52px 0 68px;grid-template-columns:215px minmax(0,1fr)}
+.portrait{width:215px;height:277px;background:linear-gradient(140deg,#E3D5C4,#F4ECE2);border-radius:3px;box-shadow:none;border:1px solid rgba(129,105,85,.15)}
+.portrait .initials{font:400 64px Georgia,serif;letter-spacing:-3px;color:#AF9B86}
+h1{font-size:clamp(45px,5vw,57px);line-height:1.12;letter-spacing:-1.15px;margin:8px 0 10px}
+.eyebrow{font:600 10px Arial,sans-serif;letter-spacing:2px;color:var(--accent)}
+.role{color:#746A60;font-size:13px;margin:0 0 22px}
+.lead{font-size:17px;line-height:1.63;font-weight:400;margin:0 0 13px;max-width:640px}
+.secondary{font-size:14px;line-height:1.75;max-width:640px}
+.linkbar{font-size:13px;margin-top:18px;gap:18px;font-weight:600}
+.linkbar a{border:0;padding:0;border-radius:0;color:var(--accent)}
+.content-section{padding:51px 0 49px}
+.section-heading{font:400 30px Georgia,'Times New Roman',serif;letter-spacing:-.5px;margin:0 0 22px}
+.paper{padding:20px 0 23px}
+.paper h3{font:400 22px Georgia,serif;letter-spacing:-.25px;line-height:1.35;margin:0 0 5px}
+.byline{font-size:12px}
+.summary{line-height:1.72}
+.paper-links{font-size:13px}
+.pill{background:#F2EBE2;border-radius:3px;color:var(--accent)}
+.content-section:nth-child(2){background:transparent}
+@media(max-width:800px){.hero{grid-template-columns:175px minmax(0,1fr);gap:28px;min-height:0;padding-top:45px;padding-bottom:48px}.portrait{width:175px;height:222px}h1{font-size:44px}.section-heading{font-size:29px}}
+@media(max-width:560px){.hero{grid-template-columns:105px minmax(0,1fr);gap:18px;padding:34px 0 39px}.portrait{width:105px;height:134px}.hero-copy{grid-column:1/-1;grid-row:2}h1{font-size:41px}.logo{font-size:21px}.header-inner{min-height:0}.linkbar{gap:16px}.section-heading{font-size:27px}.paper h3{font-size:20px}}
+
+.portrait::after{display:none;content:none}
+.portrait img{display:block;width:100%;height:100%;object-fit:cover;object-position:center center}
+@media(max-width:560px){.portrait img{object-position:center 30%}}
+
+/* Subtle links in advisor sentence and clarity for the World Bank chapter */
+#teaching .muted a {color:var(--accent);text-decoration:underline;text-decoration-color:rgba(128,97,77,.45);text-underline-offset:3px}
+.hero-copy .lead a {color:var(--accent);text-decoration:underline;text-decoration-color:rgba(128,97,77,.45);text-decoration-thickness:1px;text-underline-offset:3px}
+.policy-detail {display:inline-block;font-size:12px;color:var(--muted);padding-top:3px;line-height:1.55}
+
+/* A quiet job-market designation, kept beside the author/year metadata. */
+.jmp-note{color:var(--accent);font-style:italic;font-weight:400;white-space:nowrap}
+</style></head><body><div class="top-area"><header class="site-header"><div class="container header-inner"><a href="#top" class="logo">Michał Tulwin</a><nav class="nav" aria-label="Main navigation"><a href="#research">Research</a><a href="#teaching">Teaching</a><a href="#policy">Policy work</a><a href="files/Michal_Tulwin_CV_public.pdf" target="_blank" rel="noopener">CV</a></nav></div></header><div class="container"><section class="hero" id="top"><div class="hero-photo"><div class="portrait"><img src="images/michal-tulwin.jpg" alt="Portrait of Michał Tulwin" width="800" height="800" decoding="async" fetchpriority="high"></div></div><div class="hero-copy"><div class="eyebrow">Economics · Information · AI</div><h1>Michał Tulwin</h1><p class="lead">Welcome! I am a PhD researcher in Economics at the European University Institute (EUI) in Florence. My advisors are <a href="https://laurentmathevet.com/" target="_blank" rel="noopener noreferrer">Laurent Mathevet</a> and <a href="https://sites.google.com/view/giacomo-calzolari/home" target="_blank" rel="noopener noreferrer">Giacomo Calzolari</a>.</p><p class="secondary">My research focuses on information economics and game theory, with applications to artificial intelligence, digital markets, and political economy. I combine theoretical work with empirical analysis to study how information and incentives shape strategic behavior.</p><p class="secondary">Before joining the EUI, I worked as a Research Analyst at the World Bank’s Macroeconomics, Trade and Investment Global Practice. I hold an MSc in Applied Economics from the Stockholm School of Economics.</p><div class="linkbar"><a href="mailto:michal.tulwin@eui.eu">Email</a><a href="https://www.eui.eu/people?id=michal-tulwin" target="_blank" rel="noopener">EUI profile</a></div></div></section></div></div><main class="container"><section class="content-section" id="research"><h2 class="section-heading">Research</h2><article class="paper"><h3>Strategic Disclosure of Evidence Produced In the Market</h3><p class="byline">Michał Tulwin · 2026<span class="jmp-note"> · Job market paper</span></p><p class="summary">Consumer reviews help buyers assess product quality, but firms may selectively suppress unfavorable feedback or fabricate positive reviews when no purchase takes place. I study how these practices interact with pricing in a two-period monopoly, where genuine reviews arise only when a consumer makes a purchase. The initial price therefore determines both demand and the amount of evidence available to future buyers. Under full pooling, manipulation may raise or lower the price, depending on how it changes the marginal informational value of trade. When the price falls, the resulting increase in trade raises consumer surplus and total welfare. Censorship and fake reviews can generate different, even opposite, price and welfare effects.</p><div class="paper-links"><a href="files/strategic-disclosure.pdf" target="_blank" rel="noopener">Read paper</a></div></article><article class="paper"><h3>Strategic Electoral Mobility</h3><p class="byline">Michał Pawłowski and Michał Tulwin · 2026<span class="jmp-note"> · Job market paper</span></p><div class="pill">2026 Jacques Rupnik Prize · joint winner</div><p class="summary">Unequal voting power can give voters an incentive to cast their ballots outside their home constituency. We examine this possibility in Poland’s 2023 parliamentary election, where differences in representation coincided with relatively easy changes of voting location. Combining a theoretical model with municipality-level electoral data, we find evidence of strategic relocations toward districts where votes carry more weight. A counterfactual analysis that equalizes vote power across districts suggests that approximately 33,000 voters relocated strategically under the actual electoral rules. We also find turnout patterns consistent with additional mobilization among local voters in municipalities exposed to these inflows.</p><div class="paper-links"><a href="files/strategic-electoral-mobility.pdf" target="_blank" rel="noopener">Read paper</a></div></article><article class="paper"><h3>Delegating to a Biased AI Agent</h3><p class="byline">Michał Tulwin · 2026</p><p class="summary">Can the prospect of retraining encourage an AI agent to misrepresent its own bias? In a two-period delegation model, a firm learns about an agent’s privately known bias from its initial behavior and may pay to correct that bias before assigning future tasks. Although retraining can improve alignment, it may also reverse the agent’s incentives: a relatively well-aligned agent may exaggerate its bias to trigger correction and obtain more extensive future delegation. This strategic response creates additional distortions and can eliminate the firm’s expected gains from retraining. In a semi-separating equilibrium, the firm may benefit from committing not to retrain, while higher retraining costs can discourage strategic behavior.</p><div class="paper-links"><a href="files/delegating-to-a-biased-ai-agent.pdf" target="_blank" rel="noopener">Read paper</a></div></article></section><section class="content-section" id="teaching"><h2 class="section-heading">Teaching</h2><div class="small-row"><div><strong>Microeconomics III</strong><div class="muted">Teaching Assistant to <a href="https://www.zeinababoutalebi.com/" target="_blank" rel="noopener noreferrer">Prof. Zeinab Aboutalebi</a> · First-year Economics PhD course · EUI</div></div><div class="muted">Spring 2025</div></div></section><section class="content-section" id="policy"><h2 class="section-heading">Selected policy work</h2><p class="secondary">Selected publications from my work at the World Bank.</p><div class="policy-row"><span class="year">2019</span><span><a href="https://documents1.worldbank.org/curated/en/613961584510373964/pdf/Including-Institutions-Boosting-Resilience-in-Europe.pdf" target="_blank" rel="noopener">Including Institutions: Boosting Resilience in Europe</a></span></div><div class="policy-row"><span class="year">2020</span><span><a href="https://documents1.worldbank.org/curated/en/294831583173658317/pdf/Markets-and-People-Romania-Country-Economic-Memorandum.pdf#page=129" target="_blank" rel="noopener noreferrer">Romania’s Skills Challenge</a><br><span class="policy-detail">Co-authored chapter (Chapter 6) in <em>Markets and People: Romania Country Economic Memorandum</em> · World Bank</span></span></div></section><footer>© 2026 Michał Tulwin · Personal research website</footer></main></body></html>
